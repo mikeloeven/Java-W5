@@ -1,0 +1,3 @@
+This is a demonstration of NIO reading a file.
+We will simply read in a couple of lines.
+We have completed the demo.
