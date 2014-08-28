@@ -1,0 +1,34 @@
+import java.util.*;
+
+
+public class Main {
+
+	
+	
+	public static void main(String[] args)
+	{
+		LinkedList<String> stadiumName = new LinkedList<String>();
+		LinkedList<Double> gameReveneu = new LinkedList<Double>();
+		Iterator<Integer> iterator;
+		Scanner KB = new Scanner(System.in);
+		System.out.println("Enter Game Data enter 0 to end");
+		
+		while (true)
+		{
+			
+			String stadiumTmp=KB.next();
+			Double revenueTmp = Double.parseDouble(KB.next());
+			if (!stadiumTmp.equals("0"))
+			{
+				stadiumName.add(stadiumTmp);
+				gameReveneu.add(revenueTmp);
+				
+			}
+			else 
+			{
+				break;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,30 @@
+import java.util.*;
+public class B2D {
+
+	public static int Bin2Dec (String binIn)
+	{
+		int dec = 0;
+		int binvalue = 128;
+		char[] binParse = new char[8];
+		binParse = binIn.toCharArray();
+		for(Character i:binParse)
+		{
+			if (i == '1')
+			{
+				dec+=binvalue;
+				binvalue/=2;
+			}
+			else
+			{
+				binvalue/=2;
+			}
+				
+		}
+		
+		
+		
+		
+		return dec;
+	}
+	
+}

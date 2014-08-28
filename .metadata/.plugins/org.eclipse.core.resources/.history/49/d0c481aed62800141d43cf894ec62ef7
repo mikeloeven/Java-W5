@@ -1,0 +1,49 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+
+public class main {
+
+	
+	
+	public static void main(String[] args)
+	{
+		
+		LinkedList<String> stadiumName = new LinkedList<String>();
+		LinkedList<Double> gameRevenue = new LinkedList<Double>();
+		
+		Scanner KB = new Scanner(System.in);
+		
+		System.out.println("On Each Line Enter the Statium and Game Reveneue");
+		while(true)
+		{
+		
+			String tmp = KB.next();
+			if (tmp.equals("done"))break;
+			else 
+			{
+				stadiumName.add(tmp);
+				gameRevenue.add(Double.parseDouble(KB.next()));
+			}
+			System.out.println(stadiumName.iterator());
+		}
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+}

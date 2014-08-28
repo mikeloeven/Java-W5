@@ -1,0 +1,13 @@
+
+public class master {
+	
+	public static void main(String[] args)
+	{
+		
+		System.out.println(B2D.Bin2Dec("10000000"));
+		
+		
+		
+	}
+
+}
